@@ -7,38 +7,37 @@
 </head>
 <style>
 body {
-        font-family: Arial, sans-serif;
-        font-size: 17px;
-        margin: 0;
-        padding: 20px;
-        text-align: center;
-     }
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
 .logo-container {
-      float: left;
-      margin-right: 10px;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      margin-left: 110px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 110px;
 }
 .search-container {
-  display: flex;
-  align-items: center;
-  border: 3px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 100px;
-  width: 250px
+    display: flex;
+    align-items: center;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 250px;
 }
 
 .search-container input[type="text"] {
     flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px;
-  font-size: 12px;
-  width: 90%;
-  margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 12px;
+    width: 90%;
+    margin-top: 5px;
 }
 .barra-notificacion {
     background-color: #f8f8f8;
@@ -49,7 +48,7 @@ body {
     font-weight: bold;
     border-bottom: 1px solid #c99494;
 }
-.envios, .cambios, .seguir-pedido{
+.envios, .cambios, .seguir-pedido {
     text-decoration: none;
     color: #333;
 }
@@ -71,17 +70,25 @@ body {
     display: block;
 }
 .contenedor-imagenes {
-  display: flex;
-  justify-content: space-between; 
-  position: relative;
-  margin: 0;
-
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.imagen-wrapper {
+    width: calc(50% - 10px);
+    height: 55vh;
+    overflow: hidden;
+    margin: 0 5px;
+    position: relative;
 }
 .imagen_2, .imagen_3, .imagen_4 {
-    width: calc(50% - 10px);
-    height: auto;
-    height: 55vh;
-    margin: 0 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen_2:hover, .imagen_3:hover, .imagen_4:hover {
+    transform: scale(1.05);
 }
 .idk {
     font-style: italic;
@@ -89,37 +96,50 @@ body {
 .los-tenemos {
     font-size: 35px;
 }
-
-
-
 </style>
 <body>
     <header>
         <div class="logo-container">
-          <img src="https://static.dafiti.com.co/images/dafiti-logo.png" alt="Mi logo">
+            <img src="https://static.dafiti.com.co/images/dafiti-logo.png" alt="Mi logo">
         </div>
     </header>
     
     <div class="barra-notificacion">
         <a href="https://dafiticolombia.freshdesk.com/support/solutions/articles/151000124724--cuales-son-los-plazos-y-costos-de-entrega-" class="envios">
-        <span>Envíos gratis desde $229.900*</span> |
+            <span>Envíos gratis desde $229.900*</span> |
         </a>
         <a href="https://dafiticolombia.freshdesk.com/support/solutions/151000106716" class="cambios">
-        <span>30 Días de cambios GRATIS</span> |  
+            <span>30 Días de cambios GRATIS</span> |  
         </a> 
         <a href="https://secure.dafiti.com.co/customer/order/index/" class="seguir-pedido">
-        <span>Sigue tu pedido</span>
+            <span>Sigue tu pedido</span>
         </a>
     </div>
+    
     <div class="search-container">
         <input type="text" placeholder="Busca por producto, marca, categoria...">
     </div>
-<img src="https://static.dafiti.com.co/cms/2024/NOVIEMBRE/Feature-desktop_Portada_TPR.png" class="imagen_1">
-<div class="contenedor-imagenes">
-    <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_10_2e1f9d4712db2__cluster-categorias_outlet.jpg" class="imagen_2">
-    <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_21_21dd30ea94ddb__cluster-categorias_infantil.jpg" class="imagen_3">
-    <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_33_1762a4c39c869__cluster-categorias_sneakersfans.jpg" class="imagen_4">
-</div>
-<p class="los-tenemos"><span class="idk">LAS MARCAS QUE QUIERES</span><strong>¡LAS TENEMOS!</strong></p>
-
+    
+    <img src="https://static.dafiti.com.co/cms/2024/NOVIEMBRE/Feature-desktop_Portada_TPR.png" class="imagen_1">
+    
+    <div class="contenedor-imagenes">
+        <div class="imagen-wrapper">
+            <a href="https://www.dafiti.com.co/outlet-descuentos/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_10_2e1f9d4712db2__cluster-categorias_outlet.jpg" class="imagen_2">
+            </a>
+        </div>
+        <div class="imagen-wrapper">
+            <a href="https://www.dafiti.com.co/infantil/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_21_21dd30ea94ddb__cluster-categorias_infantil.jpg" class="imagen_3">
+            </a>
+        </div>
+        <div class="imagen-wrapper">
+            <a href="https://www.dafiti.com.co/sneaker-lovers/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_33_1762a4c39c869__cluster-categorias_sneakersfans.jpg" class="imagen_4">
+            </a>
+        </div>
+    </div>
+    
+    <p class="los-tenemos"><span class="idk">LAS MARCAS QUE QUIERES</span><strong>¡LAS TENEMOS!</strong></p>
 </body>
+</html>
