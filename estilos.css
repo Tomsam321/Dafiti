@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.logo-container {
+    float: left;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-right: 70px;
+    margin-left: 200px;
+}
+.search-container {
+    display: flex;
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin-top: 25px;
+    width: 280px;
+}
+.search-icon{
+    display: inline;
+    color: white;
+    background-color: #000000;
+    padding: 8px 13px ;
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+    top: -26px;
+    margin-left: -370px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 1px;
+    font-size: 12px;
+    width: 90%;
+    margin: 5px;
+}
+.barra-notificacion {
+    background-color: #edeaea;
+    color: #333;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.7em;
+}
+.envios, .cambios, .seguir-pedido {
+    text-decoration: none;
+    color: #333;
+    padding-right: 150px;
+    margin-right: 60px;
+    margin-left: -180px;
+}
+.centro-ayuda{
+    text-decoration: none;
+    color: white;
+    background-color: #3d00e6;
+    padding: 10px;
+    width: 280px;
+    border-radius: 6px;
+}
+.navegador {
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 0.7em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.SNEAKERS, .MUJER, .HOMBRE, .OUTLET, .NIÑOS, .FANATICOS, .ECO {
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    margin: 0 50px;
+    padding: 5px 0;
+}
+.imagen_1 {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+.imagen-wrapper {
+    width: calc(50% - 10px);
+    height: 55vh;
+    overflow: hidden;
+    margin: 0 5px;
+    position: relative;
+}
+.imagen_2, .imagen_3, .imagen_4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+.imagen_2:hover, .imagen_3:hover, .imagen_4:hover {
+    transform: scale(1.05);
+}
+.idk {
+    font-style: italic;
+}
+.los-tenemos {
+    font-size: 35px;
+    margin: 60px;
+}
+.marcas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.marcas-contenedor{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+.marcas-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out
+}
+.marcas-contenedor:hover img {
+    transform: scale(1.05);
+}
+.pagos-dudas{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.contenedor-pagos-dudas{
+    width: 700px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.contenedor-pagos-dudas img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out
+}
+.contenedor-pagos-dudas:hover img {
+    transform: scale(1.05);
+}

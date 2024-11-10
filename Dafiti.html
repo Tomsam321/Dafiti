@@ -3,99 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    font-size: 17px;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-.logo-container {
-    float: left;
-    margin-right: 10px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 110px;
-}
-.search-container {
-    display: flex;
-    align-items: center;
-    border: 3px solid #ccc;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-left: 100px;
-    width: 250px;
-}
 
-.search-container input[type="text"] {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 12px;
-    width: 90%;
-    margin-top: 5px;
-}
-.barra-notificacion {
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 8px;
-    text-align: left;
-    font-size: 0.7em;
-    font-weight: bold;
-    border-bottom: 1px solid #c99494;
-}
-.envios, .cambios, .seguir-pedido {
-    text-decoration: none;
-    color: #333;
-}
-.barra span {
-    margin: 0 20px;
-}
-.barra a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
-}
-.barran a:hover {
-    text-decoration: underline;
-}
-.imagen_1 {
-    max-width: 100%;
-    height: auto;
-    margin: 10px auto;
-    display: block;
-}
-.contenedor-imagenes {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-}
-.imagen-wrapper {
-    width: calc(50% - 10px);
-    height: 55vh;
-    overflow: hidden;
-    margin: 0 5px;
-    position: relative;
-}
-.imagen_2, .imagen_3, .imagen_4 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-.imagen_2:hover, .imagen_3:hover, .imagen_4:hover {
-    transform: scale(1.05);
-}
-.idk {
-    font-style: italic;
-}
-.los-tenemos {
-    font-size: 35px;
-}
 </style>
 <body>
     <header>
@@ -103,23 +16,54 @@ body {
             <img src="https://static.dafiti.com.co/images/dafiti-logo.png" alt="Mi logo">
         </div>
     </header>
-    
     <div class="barra-notificacion">
         <a href="https://dafiticolombia.freshdesk.com/support/solutions/articles/151000124724--cuales-son-los-plazos-y-costos-de-entrega-" class="envios">
-            <span>Envíos gratis desde $229.900*</span> |
+            <i class="fa-solid fa-truck-moving"></i>
+            <span>Envíos gratis desde $229.900*</span>
         </a>
         <a href="https://dafiticolombia.freshdesk.com/support/solutions/151000106716" class="cambios">
-            <span>30 Días de cambios GRATIS</span> |  
+            <i class="fa-solid fa-rotate"></i>
+            <span>30 Días de cambios GRATIS</span>
         </a> 
         <a href="https://secure.dafiti.com.co/customer/order/index/" class="seguir-pedido">
+            <i class="fa-solid fa-truck-moving"></i>
             <span>Sigue tu pedido</span>
         </a>
+        <a href="https://dafiticolombia.freshdesk.com/support/home" class="centro-ayuda">
+            <span><i class="fa-solid fa-headphones"></i></span>
+            <span style="margin-left: 5px;">|</span>
+            <span style="margin-left: 5px;">centro de ayuda</span>
+        </a>
     </div>
-    
     <div class="search-container">
         <input type="text" placeholder="Busca por producto, marca, categoria...">
     </div>
-    
+    <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="navegador">
+        <a href="https://www.dafiti.com.co/sneaker-lovers/" class="SNEAKERS">
+            <span>SNEAKERS</span>
+        </a>
+        <a href="https://www.dafiti.com.co/femenino/" class="MUJER">
+            <span>MUJER</span>
+        </a>
+        <a href="https://www.dafiti.com.co/masculino/" class="HOMBRE">
+            <span>HOMBRE</span>
+        </a>
+        <a href="https://www.dafiti.com.co/outlet-descuentos/" class="OUTLET">
+            <span>OUTLET</span>
+        </a>
+        <a href="https://www.dafiti.com.co/infantil/" class="NIÑOS">
+            <span>NIÑOS</span>
+        </a>
+        <a href="https://www.dafiti.com.co/fanaticos/" class="FANATICOS">
+            <span>FANATICOS</span>
+        </a>
+        <a href="https://www.dafiti.com.co/dafiti-eco/" class="ECO">
+            <span>ECO</span>
+        </a>
+    </div>
     <img src="https://static.dafiti.com.co/cms/2024/NOVIEMBRE/Feature-desktop_Portada_TPR.png" class="imagen_1">
     
     <div class="contenedor-imagenes">
@@ -141,5 +85,44 @@ body {
     </div>
     
     <p class="los-tenemos"><span class="idk">LAS MARCAS QUE QUIERES</span><strong>¡LAS TENEMOS!</strong></p>
+    <div class="marcas">
+        <div class="marcas-contenedor">
+            <a href="https://www.dafiti.com.co/mp/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_05_2c4ef9bb867f1__cluster-exclusive-brands_mp.png" class="mp">
+            </a>
+        </div>
+        <div class="marcas-contenedor">
+            <a href="https://www.dafiti.com.co/gap/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_20_21a5636b43c80__cluster-exclusive-brands_gap.png" class="gap">
+            </a>
+        </div>
+        <div class="marcas-contenedor">
+            <a href="https://www.dafiti.com.co/royal-county-of-berkshire-polo-club/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_13_2e7537a913204__cluster-exclusive-brands_royalcounty.png" class="polo-club">
+            </a>
+        </div>
+        <div class="marcas-contenedor">
+            <a href="https://www.dafiti.com.co/skechers/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_37_42958fef58c5__cluster-exclusive-brands_skechers.png" class="skechers">
+            </a>
+        </div>
+        <div class="marcas-contenedor">
+            <a href="https://www.dafiti.com.co/calvin-klein/">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_40_224669610e5b5__cluster-exclusive-brands_calvin.png" class="calvin-clein">
+            </a>
+        </div>
+    </div>
+    <div class="pagos-dudas">
+        <div class="contenedor-pagos-dudas">
+            <a href="https://dafiticolombia.freshdesk.com/support/solutions/articles/151000124769--qu%C3%A9-medios-de-pago-tengo-disponibles-">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_18_21a9d9921402d__frame_60.png" class="metodos-pago">
+            </a>
+        </div>
+        <div class="contenedor-pagos-dudas">
+            <a href="https://dafiticolombia.freshdesk.com/support/solutions/151000106716">
+                <img src="https://static.dafiti.com.co/cms/2024_07_25_17_04_27_31c16402dfdd9__frame_61.png" class="cambios-dudas">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
