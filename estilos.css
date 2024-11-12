@@ -72,7 +72,11 @@ body {
     display: flex;
     text-align: center;
     padding: 5px;
+<<<<<<< HEAD
     justify-content: center;
+=======
+    justify-content: space-between;
+>>>>>>> 0f5b6517223307f31cf159788296d2c3f941c3d1
     font-size: 0.7em;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -82,7 +86,11 @@ body {
     text-decoration: none;
     padding: 15px;
     text-align: center;
+<<<<<<< HEAD
     margin: 0 55px;
+=======
+    margin: 0 50px;
+>>>>>>> 0f5b6517223307f31cf159788296d2c3f941c3d1
     padding: 5px 0;
 }
 .imagen_1 {
@@ -115,7 +123,11 @@ body {
     font-style: italic;
 }
 .los-tenemos {
+<<<<<<< HEAD
     font-size: 40px;
+=======
+    font-size: 35px;
+>>>>>>> 0f5b6517223307f31cf159788296d2c3f941c3d1
     margin: 60px;
 }
 .marcas {
@@ -125,7 +137,11 @@ body {
 }
 .marcas-contenedor{
     width: 270px;
+<<<<<<< HEAD
     height: 260px;
+=======
+    height: 270px;
+>>>>>>> 0f5b6517223307f31cf159788296d2c3f941c3d1
     position: relative;
     overflow: hidden;
 }
@@ -145,7 +161,11 @@ body {
 }
 .contenedor-pagos-dudas{
     width: 700px;
+<<<<<<< HEAD
     height: 145px;
+=======
+    height: 200px;
+>>>>>>> 0f5b6517223307f31cf159788296d2c3f941c3d1
     position: relative;
     overflow: hidden;
     margin-top: 10px;
@@ -159,6 +179,7 @@ body {
 }
 .contenedor-pagos-dudas:hover img {
     transform: scale(1.05);
+<<<<<<< HEAD
 }
 .MAS-CONTENIDO{
     font-size: 40px;
@@ -196,3 +217,6 @@ body {
     color: #a5a5a5;
     margin-bottom: 50px;
 }
+=======
+}
+>>>>>>> 0f5b6517223307f31cf159788296d2c3f941c3d1
